@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         file:
-          - planck_rev6_drop.json
+          - iagodahlem.json
 
     steps:
       - name: Checkout QMK
@@ -23,10 +23,10 @@ jobs:
         with:
           path: users/${{ github.actor }}
 
-      - name: Build firmware
+      - name: Build Firmware
         run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
 
-      - name: Archive firmware
+      - name: Archive Firmware
         uses: actions/upload-artifact@v3
         continue-on-error: true
         with:
