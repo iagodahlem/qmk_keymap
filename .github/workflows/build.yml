@@ -1,4 +1,4 @@
-name: Build QMK firmware
+name: Build QMK Firmware
 on: [push, workflow_dispatch]
 
 jobs:
@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         file:
-          - iagodahlem.json
+          - planck_rev6_drop.json
 
     steps:
       - name: Checkout QMK
@@ -17,17 +17,20 @@ jobs:
         with:
           repository: qmk/qmk_firmware
           submodules: recursive
-      - name: Checkout userspace
+
+      - name: Checkout Userspace
         uses: actions/checkout@v3
         with:
           path: users/${{ github.actor }}
+
       - name: Build firmware
         run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
+
       - name: Archive firmware
         uses: actions/upload-artifact@v3
         continue-on-error: true
         with:
-          name: ${{ github.actor }}_${{ matrix.file }}_${{ github.sha }}
+          name: ${{ matrix.file }}_${{ github.actor }}_${{ github.sha }}
           path: |
             *.hex
             *.bin
