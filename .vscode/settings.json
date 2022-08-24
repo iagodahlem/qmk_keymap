@@ -52,5 +52,6 @@
     "UNDS",
     "VOLD",
     "VOLU"
-  ]
+  ],
+  "C_Cpp.errorSquiggles": "Disabled"
 }
