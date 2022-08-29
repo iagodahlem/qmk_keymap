@@ -50,10 +50,10 @@
       "_______"       , "_______"      , "_______"      , "_______"      , "_______"     , "_______"       , "_______"      , "_______"      , "_______"      , "_______"      , "_______"      , "_______"
     ],
     [
-      "_______", "XXXXXXX", "KC_HOME", "KC_UP",   "KC_END",  "XXXXXXX", "XXXXXXX", "KC_HOME", "KC_UP",   "KC_END",  "XXXXXXX", "_______",
-      "_______", "KC_SPC",  "KC_LEFT", "KC_DOWN", "KC_RGHT", "KC_PGUP", "KC_PGUP", "KC_LEFT", "KC_DOWN", "KC_RGHT", "KC_SPC",  "_______",
-      "_______", "XXXXXXX", "XXXXXXX", "XXXXXXX", "KC_DEL",  "KC_PGDN", "KC_PGDN", "KC_DEL",  "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-      "_______", "_______", "_______", "_______", "_______", "_______", "_______", "_______", "_______", "_______", "_______", "_______"
+      "_______", "XXXXXXX", "G(KC_LEFT)", "KC_UP"  , "G(KC_RGHT)", "XXXXXXX", "XXXXXXX", "G(KC_LEFT)", "KC_UP"  , "G(KC_RGHT)", "XXXXXXX", "_______",
+      "_______", "KC_SPC" , "KC_LEFT"   , "KC_DOWN", "KC_RGHT"   , "KC_PGUP", "KC_PGUP", "KC_LEFT"   , "KC_DOWN", "KC_RGHT"   , "KC_SPC" , "_______",
+      "_______", "XXXXXXX", "XXXXXXX"   , "XXXXXXX", "KC_DEL"    , "KC_PGDN", "KC_PGDN", "KC_DEL"    , "XXXXXXX", "XXXXXXX"   , "XXXXXXX", "_______",
+      "_______", "_______", "_______"   , "_______", "_______"   , "_______", "_______", "_______"   , "_______", "_______"   , "_______", "_______"
     ]
   ]
 }
