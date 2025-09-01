@@ -30,7 +30,7 @@ jobs:
         run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
 
       - name: Archive Firmware
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         continue-on-error: true
         with:
           name: ${{ github.actor }}_${{ github.sha }}_${{ matrix.file }}
