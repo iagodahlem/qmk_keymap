@@ -131,6 +131,139 @@
 `-----------------------------------------------------------------------------------'
 ```
 
+## Planck Improved Layout 🇧🇷
+
+> **Enhanced keymap with Brazilian Portuguese accent support and productivity improvements**
+
+**File:** `planck-rev7-improved.json`
+
+### Key Improvements
+
+- 🇧🇷 **Brazilian Accent Layer** - Fast access to ç, á, é, í, ó, ú, ô, à, ñ
+- 🚀 **Enhanced Navigation** - Window management and improved shortcuts
+- 💻 **Development Layer** - Programming symbols and macros
+- ⚡ **Smart Features** - Tap dance, Unicode support, custom macros
+
+### Base Layout (QWERTY Improved)
+
+```text
+,-----------------------------------------------------------------------------------.
+| Tab  |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Bksp |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|Esc/Ct|   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |  '   |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|Shift |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |En/Shf|
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|(/Ctrl| Dev  | Opt  | Cmd  |Lower |    Space    |Raise | Cmd  | Opt  |Accent|)/Ctrl|
+`-----------------------------------------------------------------------------------'
+```
+
+### Brazilian Accent Layer 🇧🇷 (Hold Accent Key)
+
+```text
+,-----------------------------------------------------------------------------------.
+|      |      |      |      |      |      |      |   ú  |   í  |   ó  |      |      |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|      |   á  |      |      |      |      |      |      |   é  |      |   ô  |      |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|      |   à  |      |   ç  |      |      |   ñ  |      |      |      |      |      |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|      |      |      |      |      |             |      |      |      | #### |      |
+`-----------------------------------------------------------------------------------'
+```
+
+**Quick Reference:**
+
+- `Accent + A` = **á** (acute) | `Accent + Shift + A` = **à** (grave)
+- `Accent + E` = **é** | `Accent + I` = **í** | `Accent + O` = **ó**
+- `Accent + U` = **ú** | `Accent + Shift + O` = **ô** (circumflex)
+- `Accent + C` = **ç** (cedilla) | `Accent + N` = **ñ** (tilde)
+
+### Development Layer (Dev Key)
+
+```text
+,-----------------------------------------------------------------------------------.
+|   `  |   !  |   @  |   {  |   }  |   |  |   &  |   *  |   (  |   )  |   =  | Bksp |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+| Del  |   #  |   $  |   [  |   ]  |   \  |   -  |   _  |   +  |   <  |   >  |  "   |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|Shift |   %  |   ^  |   (  |   )  |   ~  |      |      |   ,  |   .  |   /  |   ?  |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+| Exit |      |      |      |      |             |      |      |      |      |      |
+`-----------------------------------------------------------------------------------'
+```
+
+### Enhanced Navigation Layer (Hold Space)
+
+```text
+,-----------------------------------------------------------------------------------.
+| Tab  |      | Win↑ |      |      |      |      | Home |  Up  | End  |PgUp  |      |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+| Ctrl | Win← | Win↓ | Win→ |Shift |      | Home | Left | Down |Right |PgDn  |Paste |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|      | Undo | Cut  | Copy |      |      |      | Del  | Bksp |      |      |      |
+|------+------+------+------+------+------+------+------+------+------+------+------|
+|      |      |      |      |      |             |      |      |      |      |      |
+`-----------------------------------------------------------------------------------'
+```
+
+**Features:**
+
+- **Window Management:** `Win + Arrows` for macOS window tiling
+- **Quick Actions:** Undo (⌘Z), Cut (⌘X), Copy (⌘C), Paste (⌘V)
+- **Enhanced Navigation:** Optimized cursor movement and page control
+
+### Smart Features
+
+#### Tap Dance Accents
+
+- **Double-tap A** → á, **Triple-tap A** → à
+- **Double-tap E** → é
+- **Double-tap C** → ç
+
+#### Programming Macros
+
+- `EMAIL_MACRO` → Insert email address
+- `ARROW_FUNC` → `() => {}` (JavaScript arrow function)
+- `CONSOLE_LOG` → `console.log()` with cursor positioning
+- `REACT_COMP` → Full React component template
+
+#### Unicode Support
+
+- **macOS:** Works automatically
+- **Linux/Windows:** Auto-detection with fallback modes
+- **All Brazilian accents** supported via Unicode
+
+### Usage Examples
+
+**Typing "não":**
+
+1. Type `n`
+2. Hold `Accent` + `a` = **á**
+3. Type `o`
+4. Result: **não** ⚡
+
+**Typing "ação":**
+
+1. Hold `Accent` + `a` = **á**
+2. Hold `Accent` + `c` = **ç**
+3. Type `ao`
+4. Result: **ação** ⚡
+
+**Quick JavaScript function:**
+
+1. Press `ARROW_FUNC` macro
+2. Result: `() => {}` with cursor inside parentheses
+
+### Installation
+
+1. **Backup current keymap:** `cp planck-rev7.json planck-rev7-backup.json`
+2. **Use improved version:** `cp planck-rev7-improved.json planck-rev7.json`
+3. **Compile:** `qmk compile planck-rev7.json`
+4. **Flash:** `qmk flash planck-rev7.json`
+
+> 📖 **Detailed guide:** See `IMPLEMENTATION_GUIDE.md` for complete setup instructions
+
 ## License
 
 [MIT License](http://iagodahlem.mit-license.org/) © Iago Dahlem

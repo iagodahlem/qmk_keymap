@@ -11,6 +11,7 @@ jobs:
       matrix:
         file:
           - planck-rev7.json
+          - planck-rev7-improved.json
 
     steps:
       - name: Disable git safe directory checks
