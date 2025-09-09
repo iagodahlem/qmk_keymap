@@ -1,4 +1,5 @@
 name: Build QMK Firmware
+
 on: [push, workflow_dispatch]
 
 jobs:
@@ -9,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         file:
-          - iagodahlem.json
+          - planck.json
 
     steps:
       - name: Disable git safe directory checks
