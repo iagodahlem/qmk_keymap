@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         file:
-          - planck.json
+          - planck-rev7.json
 
     steps:
       - name: Disable git safe directory checks

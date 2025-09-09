@@ -1,6 +1,7 @@
 # QMK Keymap
 
 > ⌨️ My personal QMK Keymap.
+> https://docs.qmk.fm/newbs_building_firmware_workflow
 
 ## Planck
 
